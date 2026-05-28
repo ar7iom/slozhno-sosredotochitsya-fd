@@ -1,5 +1,22 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* Основные стили проекта. Mobile First. */
 
+/*Основная страница*/
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--color-background);
+  background-image: var(--image-background);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Шапка сайта*/
+.header {
+  inline-size: 100%;
+  padding: var(--page-padding);
+  block-size: calc(100vh - var(--page-padding));
+  min-block-size: 668px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1.1875fr 1fr 1.1875fr;
 }
