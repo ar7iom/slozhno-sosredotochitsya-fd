@@ -8,4 +8,8 @@
   --color-secondary: #DB00FF;
   --color-background: #000028;
   --color-text: #F1B2CE;
+  --color-text-invert: #000028;
+  --color-decor-border: #FF0070;
+  --color-menu-button: #FF0070;
+  --color-menu-button-hover-border: #FF0070; 
 }

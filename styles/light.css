@@ -8,4 +8,13 @@
   --color-secondary: #FFC2E6;
   --color-background: #FFF1F7;
   --color-text: #353430;
+  --color-text-invert: #353430;
+  --color-decor-border: #353430;
+  --color-menu-button: #353430;
+  --color-menu-button-hover-border: rgba(50, 49, 45, 0.4); 
+}
+
+/*Шапка сайта*/
+.theme-light .header__text-decor {
+  display: none;
 }
