@@ -21,7 +21,7 @@
   --h1-line-height: 0.825;
   /*Размеры*/
   --page-padding: 10px;
-  --section-padding: 40px;
+  --section-padding: 50px;
   --section-gap: 10px;
   --gallery-gap: 10px;
   --full-screen-heqight: 668px;
@@ -30,7 +30,9 @@
 /*Переменные для планшета*/
 @media (min-width: 768px) {
   :root {
-    /*Размеры lkz gkfyitnf*/
+    /*Заголовки для планшета*/
+    --h1-font-size: clamp(6.6667rem, 4.6111rem + 4.8177vw, 8.7223rem);
+    /*Размеры для планшета*/
     --page-padding: 20px;
     --section-padding: 60px;
     --gallery-gap: 20px;

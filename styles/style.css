@@ -1,6 +1,6 @@
 /* Основные стили проекта. Mobile First. */
 
-/*Основная страница*/
+/* Основная страница */
 .page {
   background-color: var(--color-background, #000028);
   background-image: var(--image-background, url(../images/cover-image-dark.png));
@@ -10,7 +10,7 @@
   background-attachment: fixed;
 }
 
-/*Шапка сайта*/
+/* Шапка сайта */
 .header, .footer {
   position: relative;
   inline-size: 100%;
@@ -140,25 +140,42 @@
   font-weight: 800;
 }
 
-/*Секции с текстом*/
+/* Секции с текстом */
 
 .main {
-  padding: 0 var(--page-padding);
+  padding: 0 var(--page-padding, 10px);
 }
 
 .text-section, .gallery-section {
   display: grid;
+  grid-template-rows: auto;
   grid-template-columns: 1fr;
 }
 
 .text-section {
   padding-top: var(--section-padding);
-  gap: var(--section-gap);
+  gap: calc(var(--section-gap, 10px) * 2);
+}
+
+.text-section:first-child {
+  padding-top: calc(var(--section-padding, 50px) - var(--section-gap, 10px));
 }
 
 .text-section__h2 {
   color: var(--color-primary, #FF0070);
-  margin-bottom: var(--section-gap, 10px);
+}
+
+.section__content, .section__content-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__content {
+  gap: calc(var(--section-gap, 10px) * 2);
+}
+
+.section__content-part {
+  gap: var(--section-gap, 10px);
 }
 
 .text-section__h3, .gallery-section__h3, .text-section__h4 {
@@ -166,29 +183,22 @@
   color: var(--color-text-invert, #000028);
 }
 
-.text-section__h4:first-of-type {
-  margin-top: var(--section-gap, 10px);
-}
-
-.text-section__paragraph {
-  margin-bottom: var(--section-gap);
-}
+/* Галерея */
 
 .gallery-section {
   gap: var(--gallery-gap, 10px);
-  padding: var(--section-padding) 0;
+  padding: var(--section-padding, 50px) 0 calc(var(--section-padding, 50px) - var(--section-gap, 10px));
 }
 
 .gallery-section_img {
   inline-size: 100%;
-  max-inline-size: 100%;
   block-size: auto;
 }
 
-/*Подвал*/
+/* Подвал */
 
 .footer {
-  padding: var(--page-padding);
+  padding: var(--page-padding, 10px);
   display: flex;
   justify-content: start;
   align-items: center;
@@ -201,10 +211,11 @@
   margin-left: 4px;
 }
 
-/*Версия для планшета*/
+/* Версия для планшета */
+
 @media (min-width: 768px) {
   
-  /*Шапка для планшетов*/
+  /* Шапка для планшетов */
   
   .header {
     grid-template-columns: 1fr 1fr;
@@ -215,11 +226,90 @@
     grid-column: 1/3;
   }
 
+  .header__title {
+    margin-left: calc(0px - var(--page-padding, 20px));
+  }
+
   .header__description {
     grid-column: 2/3;
   }
+
+  /*Текст для планшетов*/
+  .text-section {
+    grid-template-columns: 1fr 2fr;
+    padding-top: calc(var(--section-padding, 60px) + (2 * var(--section-gap, 10px)));
+  }
+
+  .text-section:first-child {
+    padding-top: var(--section-padding, 60px);
+  }
+  
+  .section__title {
+    grid-column: 1/2;
+  }
+
+  .section__content {
+    grid-column: 2/3;
+  }
+
+  .columnar-text .section__content {
+    grid-column: 1/3;
+  }
+
+  /* Галерея для планшетов */
+
+  .gallery-section {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: calc(var(--section-padding, 60px) + (2 * var(--section-gap, 10px))) 0 var(--section-padding, 60px);
+  }
+
+  .gallery-section__h3 {
+    grid-column: 1 / 4;
+  }
+
+  .gallery-section_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery-section_img-first {
+    grid-column: span 2;
+    grid-row: 2 / 3;
+  }
+
+  .gallery-section_img-second {
+    grid-column: 3 / 4;
+    grid-row: span 2;
+  }
+
+  .gallery-section_img-third {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+  }
+
+  .gallery-section_img-fourth {
+    aspect-ratio: 1 / 1;
+  }
+
+  .gallery-section_img-fifth {
+    grid-column: span 2
+  }
+
+  /* Подвал планшета */
+  
+  .footer {
+    justify-content: center;
+  }
+  
+  .footer__title {
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
-/*Версия для дестопа*/
+/* Версия для дестопа */
 @media (min-width: 1024px) {
 }
