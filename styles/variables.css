@@ -21,5 +21,23 @@
   --h1-line-height: 0.825;
   /*Размеры*/
   --page-padding: 10px;
-  --min-header-heqight: 668px;
+  --section-padding: 40px;
+  --section-gap: 10px;
+  --gallery-gap: 10px;
+  --full-screen-heqight: 668px;
+}
+
+/*Переменные для планшета*/
+@media (min-width: 768px) {
+  :root {
+    /*Размеры lkz gkfyitnf*/
+    --page-padding: 20px;
+    --section-padding: 60px;
+    --gallery-gap: 20px;
+    --full-screen-heqight: 1024px;
+  }
+}
+
+/*Переменные для дестопа*/
+@media (min-width: 1024px) {
 }
