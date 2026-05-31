@@ -8,7 +8,7 @@
 
 html {
   color: var(--color-text);
-  font-family: var(--font-family, 'IBM Plex mono', sans-serif);
+  font-family: var(--font-family, 'IBM Plex mono'), monospace;
   font-size: var(--font-size, 18px);
   line-height: var(--line-height, 1.3);
 }
@@ -29,21 +29,6 @@ p {
   margin: 0;
 }
 
-h2,
-h3 {
-  font-weight: 800;
-}
-
-h2,
-h3,
-h4 {
-  font-size: var(--font-size, 18px);
-}
-
-h4 {
-  font-weight: 400;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -61,21 +46,4 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-a {
-  text-decoration: none;
-  text-shadow: 0.1em 0.1em 0 var(--color-primary, #ff0070);
-}
-
-a:hover {
-  border-bottom: 0.056em solid currentColor; /* text-decoration не подоёдет, так как у линии тоже будет тень, которой в макете нет */
-}
-
-a:focus {
-  outline: none;
-}
-
-a:focus-visible {
-  outline: 1px solid currentColor;
 }
