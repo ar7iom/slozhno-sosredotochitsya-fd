@@ -10,6 +10,7 @@
   --color-primary: #ff8dcb;
   --color-secondary: #ffc2e6;
   --color-background: #fff1f7;
+  --color-section-heading: #353430;
   --color-text: #353430;
   --color-text-invert: #353430;
   --color-decor-border: #353430;
@@ -34,10 +35,15 @@
     --color-primary: #ff8dcb;
     --color-secondary: #ffc2e6;
     --color-background: #fff1f7;
+    --color-section-heading: #353430;
     --color-text: #353430;
     --color-text-invert: #353430;
     --color-decor-border: #353430;
     --color-menu-button: #353430;
     --color-menu-button-hover-border: rgba(50, 49, 45, 0.4);
+  }
+
+  .theme-light .header__text-decor {
+    display: none;
   }
 }

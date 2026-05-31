@@ -150,7 +150,7 @@
 }
 
 .text-section__section-heading {
-  color: var(--color-primary, #ff0070);
+  color: var(--color-section-heading, #ff0070);
   font-size: var(--font-size, 18px);
 }
 
@@ -229,7 +229,7 @@
 
 .footer {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   padding: var(--page-padding, 10px);
 }
@@ -237,8 +237,7 @@
 /* PixelPerfect Fix */
 
 .footer__title {
-  margin-top: 4px;
-  margin-left: 4px;
+  margin-top: 2px;
 }
 
 /* Версия для планшета */
@@ -332,14 +331,8 @@
 
   /* Подвал планшета */
 
-  .footer {
-    justify-content: center;
-  }
-
   .footer__title {
     margin-top: 0;
-    margin-left: 0;
-    text-align: center;
   }
 }
 
