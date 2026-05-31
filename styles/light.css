@@ -4,7 +4,7 @@
   /* Фоны */
 
   --image-background: url(../images/cover-image-light.png);
-  
+
   /* Цвета */
 
   --color-primary: #ff8dcb;
@@ -28,7 +28,7 @@
     /* Фоны */
 
     --image-background: url(../images/cover-image-light.png);
-    
+
     /* Цвета */
 
     --color-primary: #ff8dcb;
@@ -40,4 +40,4 @@
     --color-menu-button: #353430;
     --color-menu-button-hover-border: rgba(50, 49, 45, 0.4);
   }
-} 
+}

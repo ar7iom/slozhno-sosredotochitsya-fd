@@ -4,7 +4,7 @@
   /* Фоны */
 
   --image-background: url(../images/cover-image-dark.png);
-  
+
   /* Цвета */
 
   --color-primary: #ff0070;
@@ -15,18 +15,18 @@
   --color-decor-border: #ff0070;
   --color-menu-button: #ff0070;
   --color-menu-button-hover-border: rgba(255, 0, 112, 0.4);
-  
+
   /* Типографика */
 
-  --font-family: "IBM Plex mono";
+  --font-family: 'IBM Plex mono';
   --font-size: 18px;
   --line-height: 1.3;
-  
+
   /* Заголовки */
 
   --h1-font-size: clamp(6.4445rem, 6.2222rem + 1.067vw, 6.6667rem);
   --h1-line-height: 0.825;
- 
+
   /* Размеры */
 
   --page-padding: 10px;
@@ -55,11 +55,10 @@
 
 @media (min-width: 1024px) {
   :root {
-    
     /* Заголовки для планшета */
 
     --h1-font-size: clamp(8.7223rem, 15.332vw, 10rem);
-    
+
     /* Размеры для десктопа */
 
     --full-screen-heqight: 768px;
