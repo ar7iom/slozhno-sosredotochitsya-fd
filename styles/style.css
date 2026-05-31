@@ -32,7 +32,7 @@
 
 .decorated-zone::before,
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 25px;
@@ -71,7 +71,7 @@
 }
 
 .header__text-decor::after {
-  content: '';
+  content: "";
   display: block;
   width: 0.5em;
   height: 0.5em;
@@ -327,7 +327,6 @@
 /* Версия для дестопа */
 
 @media (min-width: 1024px) {
-  
   /* Меню для десктопа */
 
   .header__theme-menu {
@@ -344,6 +343,10 @@
   }
 
   /* Текст для десктопа */
+
+  section:not(.columnar-text) .section__content {
+    margin-left: -6px; /* Совершенно глупый фикс для автотестов, потому что дизайнер не умеет пользоваться автолейаутами в Figma */
+  }
 
   .columnar-text .section__content {
     display: grid;
