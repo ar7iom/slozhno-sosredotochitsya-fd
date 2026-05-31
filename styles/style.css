@@ -344,8 +344,8 @@
 
   /* Текст для десктопа */
 
-  .text-section {
-    grid-template-columns: fit-content(32%) auto;
+  .text-section:not(.columnar-text) {
+    grid-template-columns: 1fr fit-content(66%);
   }
 
   .columnar-text .section__content {
