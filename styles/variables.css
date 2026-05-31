@@ -1,38 +1,49 @@
 /* Переменные */
 
 :root {
-  /*Фоны*/
+  /* Фоны */
+
   --image-background: url(../images/cover-image-dark.png);
-  /*Цвета*/
-  --color-primary:#FF0070;
-  --color-secondary: #DB00FF;
+  
+  /* Цвета */
+
+  --color-primary: #ff0070;
+  --color-secondary: #db00ff;
   --color-background: #000028;
-  --color-text: #F1B2CE;
+  --color-text: #f1b2ce;
   --color-text-invert: #000028;
-  --color-decor-border: #FF0070;
-  --color-menu-button: #FF0070;
-  --color-menu-button-hover-border: rgba(255, 0, 112, 0.4); 
-  /*Типографика*/
-  --font-family: 'IBM Plex mono';
+  --color-decor-border: #ff0070;
+  --color-menu-button: #ff0070;
+  --color-menu-button-hover-border: rgba(255, 0, 112, 0.4);
+  
+  /* Типографика */
+
+  --font-family: "IBM Plex mono";
   --font-size: 18px;
   --line-height: 1.3;
-  /*Заголовки*/
+  
+  /* Заголовки */
+
   --h1-font-size: clamp(6.4445rem, 6.2222rem + 1.067vw, 6.6667rem);
   --h1-line-height: 0.825;
-  /*Размеры*/
+ 
+  /* Размеры */
+
   --page-padding: 10px;
   --section-padding: 50px;
+  --menu-gap: 10px;
   --section-gap: 10px;
   --gallery-gap: 10px;
   --full-screen-heqight: 668px;
 }
 
-/*Переменные для планшета*/
+/* Переменные для планшета */
+
 @media (min-width: 768px) {
   :root {
-    /*Заголовки для планшета*/
+    /* Заголовки для планшета */
     --h1-font-size: clamp(6.6667rem, 4.6111rem + 4.8177vw, 8.7223rem);
-    /*Размеры для планшета*/
+    /* Размеры для планшета */
     --page-padding: 20px;
     --section-padding: 60px;
     --gallery-gap: 20px;
@@ -40,6 +51,17 @@
   }
 }
 
-/*Переменные для дестопа*/
+/* Переменные для дестопа */
+
 @media (min-width: 1024px) {
+  :root {
+    
+    /* Заголовки для планшета */
+
+    --h1-font-size: clamp(8.7223rem, 15.332vw, 10rem);
+    
+    /* Размеры для десктопа */
+
+    --full-screen-heqight: 768px;
+  }
 }
