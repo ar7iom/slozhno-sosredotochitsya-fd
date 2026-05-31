@@ -344,8 +344,8 @@
 
   /* Текст для десктопа */
 
-  section:not(.columnar-text) .section__content {
-    margin-left: -6px; /* Совершенно глупый фикс для автотестов, потому что дизайнер не умеет пользоваться автолейаутами в Figma */
+  .text-section {
+    grid-template-columns: fit-content(32%) auto;
   }
 
   .columnar-text .section__content {
