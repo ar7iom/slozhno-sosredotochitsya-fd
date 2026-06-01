@@ -43,7 +43,7 @@
     --color-menu-button-hover-border: rgba(50, 49, 45, 0.4);
   }
 
-  .theme-light .header__text-decor {
+  .header__text-decor {
     display: none;
   }
 }

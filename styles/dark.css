@@ -18,6 +18,12 @@
   --color-menu-button-hover-border: rgba(255, 0, 112, 0.4);
 }
 
+/* Шапка сайта */
+
+.theme-dark .header__text-decor {
+  display: inline-flex;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* Фоны */
@@ -35,5 +41,11 @@
     --color-decor-border: #ff0070;
     --color-menu-button: #ff0070;
     --color-menu-button-hover-border: rgba(255, 0, 112, 0.4);
+  }
+  
+  /* Шапка сайта */
+  
+  .header__text-decor {
+    display: inline-flex;
   }
 }
